@@ -31,7 +31,7 @@ func buildConfig() Config {
 
 	alternatePort := e.GetInt("PORT")
 	if alternatePort <= 0 {
-		alternatePort = 5001
+		alternatePort = 8080
 	}
 
 	alternateBaseURL := "localhost:" + strconv.Itoa(alternatePort)
