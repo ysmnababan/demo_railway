@@ -44,6 +44,7 @@ func main() {
 	database.Init("std")
 
 	f := factory.NewFactory()
+	// f.Db.AutoMigrate(&example_feat.UserModel{})
 
 	e := echo.New()
 	e.HideBanner = true

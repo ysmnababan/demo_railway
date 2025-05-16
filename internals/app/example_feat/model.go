@@ -16,7 +16,7 @@ type UserBase struct {
 }
 
 type UserModel struct {
-	UserID string `json:"user_id" gorm:"primary_key;auto_increment"`
+	UserID string `json:"user_id" gorm:"primary_key"`
 	UserBase
 	abstraction.Entity
 }
